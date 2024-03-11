@@ -1,0 +1,55 @@
+@button-color: #f938ab;
+@mensagemDeEnvioSucesso: green;
+@corDeFundo:  rgb(184, 184, 184);
+
+body {
+    background-color: @corDeFundo;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+    .form {
+        box-shadow: 0px -25px  47px -23px rgba(0,0,0,.3); 
+        max-width: 450px;
+        width: 100%;
+
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+form {
+width: 300px;
+margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+input[type="submit"] {
+background-color: @button-color;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+.success-message {
+display: none;
+color: @mensagemDeEnvioSucesso;
+text-align: center;
+margin-top: 10px;
+}
